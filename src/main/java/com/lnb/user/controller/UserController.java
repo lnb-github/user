@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/test")
+    @GetMapping("/test")
     public List<User> getAllUser(){
         List<User> userList = userService.getAllUser();
         userList.forEach(user -> {
